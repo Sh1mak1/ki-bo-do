@@ -57,12 +57,73 @@
 &trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
 &trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
         };
-        layer_4 { display-name = "L4"; bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
-        layer_5 { display-name = "L5"; bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
-        layer_6 { display-name = "L6"; bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
-        layer_7 { display-name = "L7"; bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
-        layer_8 { display-name = "L8"; bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
-        layer_9 { display-name = "L9"; bindings = < &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans >; };
+
+        layer_4 {
+            display-name = "L4";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_5 {
+            display-name = "L5";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_6 {
+            display-name = "L6";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_7 {
+            display-name = "L7";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_8 {
+            display-name = "L8";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
+        };
+
+        layer_9 {
+            display-name = "L9";
+            bindings = <
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans  &trans &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans &trans
+            >;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &msc SCRL_UP SCRL_DOWN>;
+        };
     };
 };

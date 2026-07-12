@@ -132,6 +132,13 @@
             tapping-term-ms = <HM_TAPPING_TERM>;
             quick-tap-ms = <200>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "enc_to_layer";
+            #sensor-binding-cells = <0>;
+            bindings = <&to 4>, <&to 0>;
+        };
     };
 
     conditional_layers {
@@ -159,15 +166,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB         &kp Q         &kp W         &kp E  &kp R      &kp T                     &kp Y      &kp U            &kp I          &kp O           &kp P           &kp BACKSPACE
-&kp LCTRL       &kp A         &kp S         &kp D  &kp F      &kp G                     &kp H      &kp J            &kp K          &kp L           &kp BACKSLASH   &kp ENTER
-&kp LCTRL       &kp Z         &kp X         &kp C  &kp V      &kp B  &to 3  &kp K_MUTE  &kp N      &kp M            &kp COMMA      &kp DOT         &kp FSLH        &kp UP_ARROW
-&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &mo 8  &kp SPACE  &mo 1                     &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp TAB         &kp Q         &kp W         &kp E  &kp R      &kp T                          &kp Y      &kp U            &kp I          &kp O           &kp P           &kp BACKSPACE
+&kp LCTRL       &kp A         &kp S         &kp D  &kp F      &kp G                          &kp H      &kp J            &kp K          &kp L           &kp SEMICOLON   &kp ENTER
+&kp LCTRL       &kp Z         &kp X         &kp C  &kp V      &kp B  &kp K_MUTE  &sys_reset  &kp N      &kp M            &kp COMMA      &kp DOT         &kp FSLH        &kp UP_ARROW
+&kp LEFT_SHIFT  &kp LEFT_GUI  &kp LEFT_ALT  &mo 8  &kp SPACE  &mo 1                          &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(K_SCROLL_UP) LS(K_SCROLL_DOWN)>,
-                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
+                <&new_behavior>;
         };
 
         layer_1 {
@@ -190,7 +197,7 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans     &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                 &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                 &mkp LCLK  &trans     &mkp RCLK  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &to 0  &trans  &trans     &trans     &trans     &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                 &trans     &trans     &trans     &trans  &trans  &trans

@@ -137,7 +137,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "enc_to_layer";
             #sensor-binding-cells = <0>;
-            bindings = <&to 4>, <&to 0>;
+            bindings = <&to 3>, <&to 0>;
         };
     };
 
